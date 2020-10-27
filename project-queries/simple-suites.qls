@@ -1,0 +1,3 @@
+- description: Standard LGTM queries for C/C++, including ones not displayed by default
+- qlpack: codeql-cpp
+- query: UseOfGoto.ql
