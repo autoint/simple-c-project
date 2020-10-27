@@ -6,10 +6,10 @@ queries:
   - uses: security-and-quality
   - name: Use an in-repository QL pack (run queries in the my-queries directory)
     uses: ./project-queries
-  #- name: Use an external C QL pack (run queries from an external repo)
-  #  uses: github/codeql/cpp/ql/src/cpp-lgtm-full.qls@main
+  - name: Use an external C QL pack (run queries from an external repo)
+    uses: github/codeql/cpp/ql/src/codeql-suites/cpp-lgtm-full.qls@lgtm.com
   - name: Use an external query (run a single query from an external QL pack)
-    uses: github/codeql/cpp/ql/src/Power of 10/Rule 1/UseOfJmp.ql@main
+    uses: github/codeql/cpp/ql/src/Power of 10/Rule 1/UseOfJmp.ql@lgtm.com
   #- name: Use a query suite file (run queries from a query suite in this repo)
   #  uses: ./codeql-qlpacks/complex-python-qlpack/rootAndBar.qls
 
