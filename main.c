@@ -6,7 +6,7 @@
 int main() {
 
    const int maxInput = 100;
-   int i;
+   int i, a=0;
    double number, average, sum = 0.0;
     
    printf("Program to calculate the sum and average of positive numbers\n");
@@ -21,6 +21,13 @@ int main() {
          goto jump;
       }
       sum += number;
+   }
+   
+   while(a<=10) {
+      if(a==5)
+         break;
+            printf("\nStatement %d.",a);
+            a++;
    }
 
 jump:
